@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - João Pedro Sena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/contatos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3B82F6',
+                        dark: '#1F2937',
+                        darker: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darker text-gray-100 font-sans antialiased">
+    <!-- Cabeçalho -->
+    <header class="fixed w-full z-50 bg-darker shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-semibold text-white hover:text-primary transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>Voltar
+                </a>
+                <h1 class="text-xl font-semibold text-white">Contatos</h1>
+                <div class="w-8"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="pt-24 pb-12 px-6 min-h-screen">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- WhatsApp -->
+                <div class="contact-card">
+                    <div class="contact-card-inner">
+                        <div class="contact-card-front bg-green-700 p-8 rounded-xl flex flex-col items-center justify-center">
+                            <i class="fab fa-whatsapp text-5xl mb-4 text-white"></i>
+                            <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
+                        </div>
+                        <div class="contact-card-back bg-green-800 p-8 rounded-xl flex items-center justify-center">
+                            <div class="text-center">
+                                <p class="text-white text-lg font-medium">+55 (71) XXXX-XXXX</p>
+                                <p class="text-green-200 mt-2">Disponível para conversas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="contact-card-inner">
+                        <div class="contact-card-front bg-blue-700 p-8 rounded-xl flex flex-col items-center justify-center">
+                            <i class="fas fa-envelope text-5xl mb-4 text-white"></i>
+                            <h3 class="text-xl font-semibold text-white">Email</h3>
+                        </div>
+                        <div class="contact-card-back bg-blue-800 p-8 rounded-xl flex items-center justify-center">
+                            <div class="text-center">
+                                <p class="text-white text-lg font-medium">johnnypeter.almeida@gmail.com</p>
+                                <p class="text-blue-200 mt-2">Resposta em até 48h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Citação -->
+                <div class="contact-card md:col-span-2">
+                    <div class="contact-card-inner">
+                        <div class="contact-card-front bg-purple-700 p-8 rounded-xl flex flex-col items-center justify-center">
+                            <i class="fas fa-quote-left text-5xl mb-4 text-white"></i>
+                            <h3 class="text-xl font-semibold text-white">Minha Citação</h3>
+                        </div>
+                        <div class="contact-card-back bg-purple-800 p-8 rounded-xl flex items-center justify-center">
+                            <div class="text-center">
+                                <p class="text-white text-lg italic">"Aquele que tem um porquê supera qualquer como!"</p>
+                                <p class="text-purple-200 mt-4">- Friedrich Nietzsche</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensagem Fixa (sem efeito de digitação) -->
+            <div class="mt-16 max-w-2xl mx-auto text-center">
+                <div class="bg-dark/50 p-8 rounded-xl border border-gray-700/50">
+                    <i class="fas fa-heart text-4xl mb-4 text-primary"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Obrigado pela visita!</h3>
+                    <p class="text-gray-300">
+                        Fico feliz por ter você aqui. Sinta-se à vontade para entrar em contato através de um dos canais acima.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">© 2025 João Pedro Sena. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
